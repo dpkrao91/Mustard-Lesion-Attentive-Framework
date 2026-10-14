@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "PALM: Pathology-Aware Lightweight Mustard-disease framework"
+abstract: >
+  Imbalance-robust, field-deployable deep learning for mustard (Brassica juncea)
+  leaf disease classification, with a Leaf-Attention-Fidelity metric for
+  validating that predictions are grounded in plant tissue rather than
+  background clutter.
+authors:
+  - family-names: "<Your surname>"
+    given-names: "<Your name>"
+version: 1.0.0
+date-released: "2026-05-30"
+license: MIT
+keywords:
+  - plant disease classification
+  - mustard
+  - class imbalance
+  - explainable AI
+  - Grad-CAM
+  - edge deployment

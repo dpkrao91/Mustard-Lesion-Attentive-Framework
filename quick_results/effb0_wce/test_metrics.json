@@ -1,0 +1,50 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "cohen_kappa": 1.0,
+  "confusion_matrix": [
+    [
+      83,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      9
+    ]
+  ],
+  "per_class": {
+    "Healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 83
+    },
+    "Alternaria_Blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "White_Rust": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9
+    }
+  },
+  "macro_auc": 1.0,
+  "best_val_macro_f1": 0.9804359383306752,
+  "best_epoch": 24,
+  "latency_ms": 8.48004665846626,
+  "throughput_fps": 117.92387946375575,
+  "trainable_params": 4011391
+}

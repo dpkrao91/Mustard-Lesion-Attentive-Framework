@@ -1,0 +1,34 @@
+# =============================================================================
+# PALM — default configuration
+# Pathology-Aware Lightweight Mustard-disease framework
+# =============================================================================
+seed: 42
+device: auto          # auto | cuda | cpu | mps
+output_dir: runs/palm
+
+data:
+  root: data/raw            # contains Healthy/ Alternaria_Blight/ White_Rust/
+  splits_dir: data/splits   # produced by scripts/prepare_splits.py
+  image_size: 224
+  num_workers: 4
+  use_weighted_sampler: true   # second imbalance remedy (with cb_focal loss)
+
+model:
+  backbone: efficientnet_b0    # any timm id: resnet50, mobilenetv3_large_100, convnext_tiny ...
+  use_cbam: true               # the lesion-focusing attention head (PALM core)
+  pretrained: true
+  drop_rate: 0.2
+
+loss:
+  name: cb_focal               # ce | weighted_ce | focal | cb_focal
+  gamma: 2.0                   # focal focusing parameter
+  beta: 0.999                  # class-balanced effective-number beta
+
+train:
+  epochs: 40
+  batch_size: 32
+  optimizer: adamw
+  lr: 0.0003
+  weight_decay: 0.0001
+  scheduler: cosine            # cosine | none
+  amp: true                    # mixed precision (CUDA only)

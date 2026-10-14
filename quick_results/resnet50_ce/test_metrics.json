@@ -1,0 +1,50 @@
+{
+  "accuracy": 0.978494623655914,
+  "balanced_accuracy": 0.6296296296296297,
+  "macro_f1": 0.6430905695611578,
+  "weighted_f1": 0.9729300322279449,
+  "cohen_kappa": 0.8777923784494087,
+  "confusion_matrix": [
+    [
+      83,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      8
+    ]
+  ],
+  "per_class": {
+    "Healthy": {
+      "precision": 0.9764705882352941,
+      "recall": 1.0,
+      "f1": 0.9880952380952381,
+      "support": 83
+    },
+    "Alternaria_Blight": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "White_Rust": {
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1": 0.9411764705882353,
+      "support": 9
+    }
+  },
+  "macro_auc": 1.0,
+  "best_val_macro_f1": 1.0,
+  "best_epoch": 25,
+  "latency_ms": 5.079279995212952,
+  "throughput_fps": 196.87829789703775,
+  "trainable_params": 23514179
+}

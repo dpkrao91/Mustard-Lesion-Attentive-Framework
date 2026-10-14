@@ -1,0 +1,9 @@
+{
+  "n_images": 93,
+  "mean_laf_overall": 0.958327401766824,
+  "mean_laf_per_class": {
+    "Healthy": 0.9596070750801272,
+    "Alternaria_Blight": 0.8147898321614417,
+    "White_Rust": 0.9624745889447374
+  }
+}

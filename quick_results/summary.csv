@@ -1,0 +1,2 @@
+run,accuracy,balanced_acc,macro_f1,macro_auc,alternaria_recall,params_M,latency_ms
+palm,0.9892,0.963,0.9784,1.0,1.0,4.22,8.22
